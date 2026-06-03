@@ -9,8 +9,7 @@
     "sample-local-test": "npx browserstack-node-sdk node ./sdk-tests/local-test.js",
     "single": "node ./tests/single.js",
     "parallel": "node ./tests/parallel.js",
-    "local": "node ./tests/local.js",
-    "postinstall": "npm update browserstack-node-sdk"
+    "local": "node ./tests/local.js"
   },
   "dependencies": {
     "browserstack-local": "^1.5.2",
