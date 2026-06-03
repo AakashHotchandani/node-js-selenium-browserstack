@@ -1,3 +1,7 @@
 /browserstack.err
 /local.log
 /node_modules
+node_modules
+browserstack-node-sdk
+*.log
+local.log

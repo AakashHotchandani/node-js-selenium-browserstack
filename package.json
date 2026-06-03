@@ -4,16 +4,26 @@
   "description": "Sample code repository to run selenium tests on browserstack using NodeJs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx browserstack-node-sdk node ./sdk-tests/sample-test.js",
+    "sample-test": "npx browserstack-node-sdk node ./sdk-tests/sample-test.js",
+    "sample-local-test": "npx browserstack-node-sdk node ./sdk-tests/local-test.js",
     "single": "node ./tests/single.js",
     "parallel": "node ./tests/parallel.js",
-    "local": "node ./tests/local.js"
+    "local": "node ./tests/local.js",
+    "postinstall": "npm update browserstack-node-sdk"
   },
   "dependencies": {
     "browserstack-local": "^1.5.2",
+    "browserstack-node-sdk": "latest",
     "selenium-webdriver": "^4.1.2"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "browserstack",
+    "selenium",
+    "nodejs",
+    "automate",
+    "sdk"
+  ],
+  "author": "BrowserStack",
   "license": "ISC"
 }

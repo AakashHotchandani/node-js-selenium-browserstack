@@ -1,0 +1,29 @@
+userName: YOUR_USERNAME
+accessKey: YOUR_ACCESS_KEY
+projectName: BrowserStack Samples
+buildName: browserstack build
+buildIdentifier: '#${BUILD_NUMBER}'
+# Vanilla Node.js runner — run via `npx browserstack-node-sdk node <file>`.
+# NOTE: confirm the canonical `framework` token for the vanilla-node runner with the SDK owner
+# (some node SDK setups omit `framework` for plain-node samples). Set to `node` here for R2 completeness.
+framework: node
+platforms:
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
+  - deviceName: Samsung Galaxy S22 Ultra
+    browserName: chrome
+    osVersion: 12.0
+parallelsPerPlatform: 1
+browserstackAutomation: true
+browserstackLocal: true
+source: node-js-selenium-browserstack:sample-sdk:v1.0
+testObservability: true
+debug: false
+networkLogs: false
+consoleLogs: errors
